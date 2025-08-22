@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PG Events & Fireworks - Ignite Your Moments</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-dark-bg text-gray-200">
+
+    <header class="bg-dark-bg/80 backdrop-blur-sm sticky top-0 z-50 shadow-lg shadow-black/30">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-3">
+                <img src="media/logo.png" alt="PG Events Logo" class="h-14 w-14 object-contain">
+                <span class="text-xl md:text-2xl font-playfair font-bold gold-text tracking-wider">PG EVENTS</span>
+            </a>
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold tracking-wider">
+                <a href="index.html#about" class="hover:gold-text transition duration-300">ABOUT</a>
+                <a href="index.html#services" class="hover:gold-text transition duration-300">SERVICES</a>
+                <a href="gallery.html" class="hover:gold-text transition duration-300">GALLERY</a>
+                <a href="index.html#contact" class="gold-bg text-dark-bg font-bold py-2 px-5 rounded-full hover:bg-opacity-90 transition duration-300">CONTACT US</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-2xl"><i class="fas fa-bars"></i></button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 text-center">
+            <a href="index.html#about" class="block py-2 hover:gold-text transition duration-300">ABOUT</a>
+            <a href="index.html#services" class="block py-2 hover:gold-text transition duration-300">SERVICES</a>
+            <a href="gallery.html" class="block py-2 hover:gold-text transition duration-300">GALLERY</a>
+            <a href="index.html#contact" class="block py-2 hover:gold-text transition duration-300">CONTACT</a>
+        </div>
+    </header>
+
+    <section class="hero-bg h-screen flex items-center justify-center text-center">
+        <div class="container mx-auto px-6">
+            <h1 class="text-4xl md:text-7xl font-playfair font-bold text-white italic leading-tight mb-4">Crafting Unforgettable Moments</h1>
+            <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-8">We turn your vision into a dazzling reality with spectacular events and breathtaking fireworks.</p>
+            <a href="#services" class="gold-bg text-dark-bg font-bold py-3 px-10 rounded-full text-lg hover:bg-opacity-90 transition duration-300 transform hover:scale-105 shadow-lg shadow-yellow-500/20">
+                Explore Our Magic <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+    </section>
+
+    <main class="container mx-auto px-6 py-20 md:py-28 space-y-28">
+
+        <section id="about" class="text-center reveal">
+            <h2 class="text-3xl md:text-4xl font-playfair font-bold mb-12 section-title gold-text">Pune's Premier Event Artisans</h2>
+            <p class="max-w-4xl mx-auto text-gray-400 leading-relaxed text-lg">
+                At PG Events & Fireworks, we don't just plan events; we craft experiences. As Pune's leading event management company, we specialize in creating bespoke celebrations—from grand corporate functions to intimate weddings—that leave a lasting impression. Our signature is our dazzling fireworks displays, designed to ignite your special moments and light up the sky.
+            </p>
+        </section>
+
+        <section id="services" class="reveal">
+            <h2 class="text-3xl md:text-4xl font-playfair font-bold text-center mb-16 section-title gold-text">Our Signature Services</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+                <div class="service-card p-6 rounded-lg text-center"><i class="fas fa-wind text-4xl gold-text mb-4"></i><h3 class="font-semibold text-lg">CO2 Paper Blaster</h3></div>
+                <div class="service-card p-6 rounded-lg text-center"><i class="fas fa-jet-fighter text-4xl gold-text mb-4 -rotate-90"></i><h3 class="font-semibold text-lg">CO2 Jet</h3></div>
+                <div class="service-card p-6 rounded-lg text-center"><i class="fas fa-fire-alt text-4xl gold-text mb-4"></i><h3 class="font-semibold text-lg">Fire Flame Machine</h3></div>
+                <div class="service-card p-6 rounded-lg text-center"><i class="fas fa-sparkles text-4xl gold-text mb-4"></i><h3 class="font-semibold text-lg">Sparkle Machine</h3></div>
+                <div class="service-card p-6 rounded-lg text-center"><i class="fas fa-snowflake text-4xl gold-text mb-4"></i><h3 class="font-semibold text-lg">Cold Pyro</h3></div>
+                <div class="service-card p-6 rounded-lg text-center"><i class="fas fa-cloud text-4xl gold-text mb-4"></i><h3 class="font-semibold text-lg">Fog Effects</h3></div>
+                <div class="service-card p-6 rounded-lg text-center"><i class="fas fa-bomb text-4xl gold-text mb-4"></i><h3 class="font-semibold text-lg">Mine SFX</h3></div>
+                <div class="service-card p-6 rounded-lg text-center"><i class="fas fa-birthday-cake text-4xl gold-text mb-4"></i><h3 class="font-semibold text-lg">Balloon Decor</h3></div>
+            </div>
+        </section>
+
+        <section class="bg-gradient-to-r from-yellow-900/50 via-gold to-yellow-900/50 p-1 rounded-lg reveal">
+             <div class="bg-dark-bg rounded-lg p-8 md:p-12 text-center">
+                <h2 class="text-3xl md:text-4xl font-playfair font-bold mb-4 gold-text">Divine Ganpati Decorations</h2>
+                <p class="text-lg text-gray-300 mb-6">Create a sacred and beautiful space for Bappa, all within your budget. 🫶🏻</p>
+                <a href="tel:9730747073" class="text-xl font-semibold gold-text hover:underline">ENQUIRE NOW: 9730747073 📞</a>
+             </div>
+        </section>
+
+        <section id="gallery" class="reveal">
+            <h2 class="text-3xl md:text-4xl font-playfair font-bold text-center mb-16 section-title gold-text">A Glimpse of Our Magic</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="gallery-item rounded-lg" data-src="media/ganpati-decor-1.jpg"><img src="media/ganpati-decor-1.jpg" alt="Event Decoration" class="w-full h-96 object-cover rounded-lg"></div>
+                <div class="gallery-item rounded-lg" data-src="media/wedding-mandap.jpg"><img src="media/wedding-mandap.jpg" alt="Event Decoration" class="w-full h-96 object-cover rounded-lg"></div>
+                <div class="gallery-item rounded-lg" data-src="media/floral-arch.jpg"><img src="media/floral-arch.jpg" alt="Event Decoration" class="w-full h-96 object-cover rounded-lg"></div>
+                <div class="gallery-item rounded-lg" data-src="media/elegant-staging.jpg"><img src="media/elegant-staging.jpg" alt="Event Decoration" class="w-full h-96 object-cover rounded-lg"></div>
+                <div class="gallery-item rounded-lg" data-src="media/intimate-setting.jpg"><img src="media/intimate-setting.jpg" alt="Event Decoration" class="w-full h-96 object-cover rounded-lg"></div>
+                <div class="gallery-item rounded-lg" data-src="media/stage-decor.jpg"><img src="media/stage-decor.jpg" alt="Event Decoration" class="w-full h-96 object-cover rounded-lg"></div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="gallery.html" class="gold-bg text-dark-bg font-bold py-3 px-10 rounded-full text-lg hover:bg-opacity-90 transition duration-300 transform hover:scale-105 shadow-lg shadow-yellow-500/20">
+                    View Full Gallery <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="contact" class="bg-light-bg border-t-2 gold-border pt-16 pb-8">
+        <div class="container mx-auto px-6 text-center">
+            <img src="media/logo.png" alt="PG Events Logo" class="h-24 w-24 mx-auto mb-4">
+            <h2 class="text-3xl font-playfair font-bold gold-text mb-2">Let's Make Your Event Memorable</h2>
+            <p class="text-lg mb-8 text-gray-400">DM For Any Enquiries 📩</p>
+            
+            <div class="max-w-md mx-auto mb-10 text-lg">
+                <p class="mb-4"><i class="fas fa-user mr-3 gold-text"></i>Prem Gaikwad</p>
+                <p class="mb-4"><a href="tel:9730747073" class="hover:gold-text transition"><i class="fas fa-phone mr-3 gold-text"></i>9730747073</a></p>
+                <p class="mb-4"><a href="mailto:pgeventfireworkofficial@gmail.com" class="hover:gold-text transition"><i class="fas fa-envelope mr-3 gold-text"></i>pgeventfireworkofficial@gmail.com</a></p>
+                <p><a href="https://g.co/kgs/ChjuKz5" target="_blank" class="hover:gold-text transition"><i class="fas fa-map-marker-alt mr-3 gold-text"></i>Find us on Google</a></p>
+            </div>
+            
+            <div class="flex justify-center space-x-6 mb-8">
+                <a href="https://wa.me/919730747073" target="_blank" class="text-3xl text-gray-500 hover:gold-text transition"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/pg_event_sfx_/" target="_blank" class="text-3xl text-gray-500 hover:gold-text transition"><i class="fab fa-instagram"></i></a>
+            </div>
+
+            <p class="text-gray-600 text-sm">&copy; 2025 PG Events & Fireworks. Crafted with Magic.</p>
+        </div>
+    </footer>
+
+    <div id="lightbox" style="display: none; opacity: 0;" onclick="closeLightbox()">
+        <span id="lightbox-close">&times;</span>
+        <img id="lightbox-img" src="">
+    </div>
+
+    <div class="fab-container">
+        <a href="https://wa.me/919730747073" target="_blank" class="fab fab-whatsapp"><i class="fab fa-whatsapp"></i></a>
+        <a href="tel:9730747073" class="fab fab-call"><i class="fas fa-phone"></i></a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
